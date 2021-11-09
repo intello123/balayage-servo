@@ -5,5 +5,8 @@ basic.forever(function () {
         angle = index * 10 + 10
         servos.P0.setAngle(angle)
         basic.pause(100)
+        angle += index * -5 + 10
+        servos.P0.setAngle(angle)
+        basic.pause(200)
     }
 })
